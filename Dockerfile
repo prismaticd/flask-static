@@ -12,6 +12,7 @@ RUN apt update \
       && apt-get install -y ca-certificates gettext-base \
       && apt-get install -y libev-dev \
       && apt-get install -y python3-dev \
+      && pip install flask Frozen-Flask
       && rm -rf /var/lib/apt/lists/*
       
 RUN python --version && node --version && firebase --version
