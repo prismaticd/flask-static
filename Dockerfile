@@ -7,7 +7,7 @@ RUN apt update \
       && bash nodesource_setup.sh \
       && apt install nodejs \
       && npm install -g firebase-tools \
-      && npm cache clean \
+      && npm cache clean --force \
       && apt install -y -t stretch-backports openssl libssl-dev \
       && apt-get install -y ca-certificates gettext-base \
       && apt-get install -y libev-dev \
